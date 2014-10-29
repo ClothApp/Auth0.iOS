@@ -66,6 +66,13 @@
 @property (readonly, nonatomic) NSString *accessTokenSecret;
 
 /**
+ *  If the identity provider is WordPress, a token_site_id property will be present
+ *  and can be used to reference the site the user has authenticated.
+ *  Currently only for WordPress.
+ */
+@property (readonly, nonatomic) NSString *tokenSiteId;
+
+/**
  *  Initialises an instance from a JSON dictionary
  *
  *  @param JSONDict dictionary with JSON values
